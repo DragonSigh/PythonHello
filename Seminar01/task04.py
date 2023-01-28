@@ -14,7 +14,7 @@ sum = int(input("Введите общее количество журавлик
 # 6x = S
 # x = S / 6
 
-x = round(sum // 6)
+x = round(sum / 6)
 
 petya = x
 katya = 4 * x
