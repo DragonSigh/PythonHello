@@ -16,9 +16,9 @@ summa2 = 0
 while n != 0:
     digit = n % 10
     if n < 1000:
-        summa1 = summa1 + digit
+        summa1 += digit
     else:
-        summa2 = summa2 + digit
+        summa2 += digit
     n = n // 10
 
 if summa1 == summa2:

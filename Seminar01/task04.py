@@ -8,16 +8,16 @@
 # 24 -> 4 16 4
 # 60 -> 10 40 10
 
-sum = int(input("Введите общее количество журавликов S: "))
+cranes  = int(input("Введите общее количество журавликов S: "))
 
 # x + x + 2 * 2x = S
 # 6x = S
 # x = S / 6
 
-x = round(sum / 6)
+x = round(cranes  / 6)
 
 petya = x
 katya = 4 * x
-serezha = x
+serezha = petya
 
-print(sum, "->", petya, katya, serezha)
+print(cranes , "->", petya, katya, serezha)

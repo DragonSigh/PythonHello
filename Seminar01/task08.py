@@ -6,17 +6,17 @@
 # 3 2 4 -> yes
 # 3 2 1 -> no
 
-numN = int(input("Введите число N: "))
-numM = int(input("Введите число M: "))
+num_n = int(input("Введите число N: "))
+num_m = int(input("Введите число M: "))
 
-x = numN
+x = num_n
 
-if numN > numM:
-    x = numM
+if num_n > num_m:
+    x = num_m
 
-numK = int(input("Введите сколько долек отломить: "))
+num_k = int(input("Введите сколько долек отломить: "))
 
 if numK % x == 0:
-    print(numN, numM, numK, "-> yes")
+    print(num_n, num_m, num_k, "-> yes")
 else:
-    print(numN, numM, numK, "-> no")
+    print(num_n, num_m, num_k, "-> no")
