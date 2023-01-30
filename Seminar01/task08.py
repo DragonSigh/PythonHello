@@ -16,7 +16,7 @@ if num_n > num_m:
 
 num_k = int(input("Введите сколько долек отломить: "))
 
-if numK % x == 0:
+if num_k % x == 0:
     print(num_n, num_m, num_k, "-> yes")
 else:
     print(num_n, num_m, num_k, "-> no")
