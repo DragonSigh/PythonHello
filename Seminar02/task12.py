@@ -11,6 +11,6 @@ summa  = int(input("Введите сумму загаданных чисел: "
 product = int(input("Введите произведение загаданных чисел: "))
 
 for number_x in range (1, 1000):
- number_y = summa - number_x
- if number_x <= number_y and number_x * number_y == product:
-    print(summa, product, '->', number_x, number_y)
+    number_y = summa - number_x
+    if number_x <= number_y and number_x * number_y == product:
+        print(summa, product, '->', number_x, number_y)
