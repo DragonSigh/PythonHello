@@ -27,7 +27,7 @@ if 1 >= number_of_days >= 100:
     print("Error")
 else:
     for i in range(0, number_of_days):
-        days_temp.append(random.randint(-50,51))
+        days_temp.append(random.randint(-50,50))
         if days_temp[i] > 0:
             counter += 1
             if counter > max_days: max_days = counter
