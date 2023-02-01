@@ -28,5 +28,4 @@ for i in range(0, number_of_watermelons):
     if weights_list[i] < min_weight:
         min_weight = weights_list[i]
 
-print(number_of_watermelons, "->", weights_list)
 print(min_weight, max_weight)

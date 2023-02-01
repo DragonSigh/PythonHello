@@ -22,5 +22,4 @@ for i in range(0, number_of_coins):
     else:
         second_side_count += 1
 
-print(number_of_coins, "->", coins_list)
 print(one_side_count if one_side_count <= second_side_count else second_side_count)

@@ -34,5 +34,4 @@ else:
         else:
             counter = 0
 
-    print(number_of_days, "->", days_temp)
     print(max_days)
