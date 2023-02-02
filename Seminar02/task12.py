@@ -14,3 +14,4 @@ for number_x in range (1, 1000):
     number_y = summa - number_x
     if number_x <= number_y and number_x * number_y == product:
         print(summa, product, '->', number_x, number_y)
+        break

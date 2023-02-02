@@ -7,6 +7,6 @@
 number_n = int(input("Введите число N: "))
 i = 1
 
-while i < number_n:
+while i <= number_n:
     print(i)
     i *= 2
