@@ -8,10 +8,17 @@
 # 3
 # -> 1
 
+import random
+
 number_n = int(input("Введите n - количество элементов в массиве: "))
-list = [i for i in range(1, number_n + 1)]
+
+# list_a = [i for i in range(1, number_n + 1)]  # массив как в условии
+list_a = [random.randint(1, number_n) for i in range(1, number_n + 1)]  # массив случайных чисел
+
+print(list_a)
+
 number_x = int(input("Введите x - какое число нужно найти: "))
 
-result = list.count(number_x)
+result = list_a.count(number_x)
 
 print(result)
