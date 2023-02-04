@@ -92,5 +92,8 @@ if user_word[0] in en_scrable.keys():
 elif user_word[0] in ru_scrable.keys():
     for letter in user_word:
         points += ru_scrable.get(letter)
+else:
+    print("Input error")
+    exit()
 
 print(points)
