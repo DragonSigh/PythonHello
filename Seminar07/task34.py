@@ -9,7 +9,8 @@
 # Вывод:
 # Парам пам-пам
 
-input_phrase = 'пара-ра-рам рам-пам-папам па-ра-па-дам'
+# input_phrase = 'пара-ра-рам рам-пам-папам па-ра-па-дам'
+input_phrase = input()
 
 def check_rhyme(phrase):
     phrase_list = phrase.split(' ')
