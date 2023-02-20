@@ -21,7 +21,7 @@ def check_rhyme(phrase):
         for s in elem:
             if s in vowels:
                 counter += 1
-        result.append(count )
+        result.append(counter)
     return result.count(result[0]) == len(result)
 
 if check_rhyme(input_phrase):
