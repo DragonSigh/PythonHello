@@ -37,7 +37,7 @@ def change_contact(file, old_string, new_string):
         lines = fd.readlines()
     with open(file, 'w', encoding='utf-8') as fd:
         for line in lines:
-            line = line.replace(old_string + ' ', new_string + ' ')
+            line = line.split.replace(old_string + ' ', new_string + ' ')
             fd.write(line)
 
 def delete_contact(file, search_string):
@@ -83,7 +83,7 @@ def main_menu():
             # print('посмотреть весь справочник')
             print(read_file(file_contacts))
         elif user_choice == '4':
-           user_input = input('Введите имя, фамилию или номер телефона: ')
+           user_input = input('Введите имя ИЛИ фамилию: ')
            replace_str = input('Введите на что заменить: ')
            change_contact(file_contacts, user_input, replace_str)
            print('Контакт изменен')
