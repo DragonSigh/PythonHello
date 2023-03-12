@@ -5,7 +5,7 @@
 # 123 -> 6 (1 + 2 + 3)
 # 100 -> 1 (1 + 0 + 0)
 
-number = int(input("Введите трёхзначное число: "))
+number = int(input('Введите трёхзначное число: '))
 n = number
 digit = 0
 result = 0
@@ -15,4 +15,4 @@ while n != 0:
     result = result + digit
     n = n // 10
 
-print(number, "->", result)
+print(number, '->', result)

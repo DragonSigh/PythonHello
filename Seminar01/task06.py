@@ -7,7 +7,7 @@
 # 385916 -> yes
 # 123456 -> no
 
-number = int(input("Введите номер билета: "))
+number = int(input('Введите номер билета: '))
 n = number
 digit = 0
 summa1 = 0
@@ -19,9 +19,9 @@ while n != 0:
         summa1 += digit
     else:
         summa2 += digit
-    n = n // 10
+    n //= 10
 
 if summa1 == summa2:
-    print(number, "->", "yes")
+    print(number, '->', 'yes')
 else:
-    print(number, "->", "no")
+    print(number, '->', 'no')

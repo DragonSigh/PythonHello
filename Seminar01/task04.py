@@ -8,7 +8,7 @@
 # 24 -> 4 16 4
 # 60 -> 10 40 10
 
-cranes  = int(input("Введите общее количество журавликов S: "))
+cranes  = int(input('Введите общее количество журавликов S: '))
 
 # x + x + 2 * 2x = S
 # 6x = S
@@ -20,4 +20,4 @@ petya = x
 katya = 4 * x
 serezha = petya
 
-print(cranes , "->", petya, katya, serezha)
+print(cranes , '->', petya, katya, serezha)

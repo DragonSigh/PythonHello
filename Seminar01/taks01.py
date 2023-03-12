@@ -9,8 +9,8 @@
 # Output:
 # 2
 
-num_n = int(input("Введите число n: "))
-num_m = int(input("Введите число m: "))
+num_n = int(input('Введите число n: '))
+num_m = int(input('Введите число m: '))
 
 result = (num_m + num_n - 1) // num_n
 

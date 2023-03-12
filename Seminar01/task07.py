@@ -8,9 +8,9 @@
 # Input: 2016
 # Output: YES
 
-year = int(input("Введите год: "))
+year = int(input('Введите год: '))
 
 if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
-    print(year, "->", "YES")
+    print(year, '->', 'YES')
 else:
-    print(year, "->", "NO")
+    print(year, '->', 'NO')

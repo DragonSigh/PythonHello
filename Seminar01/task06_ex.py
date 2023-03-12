@@ -9,7 +9,7 @@
 
 # (*) Усложнение. Вывод результат на экран сделайте одной строкой(только один print), для этого используйте тернарный оператор
 
-number = int(input("Введите номер билета: "))
+number = int(input('Введите номер билета: '))
 n = number
 digit = 0
 summa1 = 0
@@ -23,4 +23,4 @@ while n != 0:
         summa2 += digit
     n //= 10
 
-print(number, "->", "yes" if summa1 == summa2 else "no")
+print(number, '->', 'yes' if summa1 == summa2 else 'no')
