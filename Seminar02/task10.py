@@ -22,4 +22,5 @@ for i in range(0, number_of_coins):
     else:
         second_side_count += 1
 
-print(one_side_count if one_side_count <= second_side_count else second_side_count)
+print(coins_list)
+print('Нужно перевернуть:', one_side_count if one_side_count <= second_side_count else second_side_count)

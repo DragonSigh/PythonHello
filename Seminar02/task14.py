@@ -8,5 +8,5 @@ number_n = int(input("Введите число N: "))
 i = 1
 
 while i <= number_n:
-    print(i)
+    print(i, end=',')
     i *= 2
