@@ -39,11 +39,11 @@ if discriminant < 0:
     print(summa, product, '->', 'Решения нет')
 # если дискриминант равен нулю, вычислить единственный корень уравнения по формуле х = −b/2a;
 elif discriminant == 0:
-    number_x = int(-b / 2 * a)
-    number_y = summa - number_x
+    number_y = int(-b / 2 * a)
+    number_x = summa - number_y
     print(summa, product, '->', number_x, number_y)
 # если дискриминант положительный, найти два действительных корня квадратного уравнения по формуле корней 
 else:
-    number_x = int((-b + math.sqrt(discriminant)) / (2 * a))
-    number_y = summa - number_x
+    number_y = int((-b + math.sqrt(discriminant)) / (2 * a))
+    number_x = summa - number_y
     print(summa, product, '->', number_x, number_y)
