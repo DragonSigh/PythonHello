@@ -21,4 +21,4 @@ number_x = int(input("Введите x - какое число нужно най
 
 result = list_a.count(number_x)
 
-print(result)
+print("-1" if result == 0 else result)
