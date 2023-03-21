@@ -21,6 +21,7 @@ import random
 bushes = int(input('Ведите количество кустов: '))
 berries = [random.randint(1, 10) for i in range(1, bushes + 1)]
 max_sum = 0
+max_bush = 0
 
 for i in range(0, bushes):
     if i == bushes - 1:
@@ -29,6 +30,7 @@ for i in range(0, bushes):
         current_sum = berries[i - 1] + berries[i] + berries[i + 1]
     if current_sum > max_sum:
         max_sum = current_sum
+        max_bush = i
 
 print(bushes, '->', *berries)
-print(max_sum)
+print(f'Макс. кол-во ягод {max_sum}, собрано для куста {max_bush}')

@@ -19,4 +19,7 @@ m_set = {int(input(f'Введите элемент {i + 1} множества m:
 
 result = sorted(n_set.intersection(m_set))
 
-print(*result)
+if len(result) > 0:
+    print(*result)
+else:
+    print('Повторяющихся чисел нет')
