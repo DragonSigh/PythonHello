@@ -6,10 +6,22 @@
 
 def print_operation_table(operation, num_rows=6, num_columns=6):
     row=[]
+
+    print('\t', end='')
+    for i in range(1, num_columns + 1):
+        print(i, sep='', end='\t')
+    print()
+
+    print('\t┌', end='')
+    for i in range(1, num_columns + 1):
+        print('─' * num_columns, sep='─', end='─')
+    print()
+
     for i in range(1, num_rows + 1):
+        print(i, '\t│ ', sep=' ', end='')
         for j in range(1, num_columns + 1):
             row.append(operation(i, j))
-        print(*row)
+        print(*row, sep='\t')
         row=[]
 
 print_operation_table(lambda x, y: x * y) 
