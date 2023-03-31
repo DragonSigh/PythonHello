@@ -12,20 +12,25 @@
 # input_phrase = 'пара-ра-рам рам-пам-папам па-ра-па-дам'
 input_phrase = input()
 
-def check_rhyme(phrase):
+def check_rhyme(phrase, vowels_info = True):
+    vowels = {"а", "е", "ё", "и", "о", "у", "ы", "э", "ю", "я"}
     phrase_list = phrase.split(' ')
-    counter = 0
+    result_vowels = []
     result = []
-    vowels = ["а", "е", "ё", "и", "о", "у", "ы", "э", "ю", "я"]
+
     for elem in phrase_list:
+        phrase_vowels = dict()
         counter = 0
         for s in elem:
             if s in vowels:
                 counter += 1
+                phrase_vowels[s] = phrase_vowels.get(s, 0) + 1
+        result_vowels.append(phrase_vowels)
         result.append(counter)
-    return result.count(result[0]) == len(result)
 
-if check_rhyme(input_phrase):
-    print('Парам пам-пам')  # True
-else:
-    print('Пам парам')  # False
+    if vowels_info:
+        return result.count(result[0]) == len(result), result_vowels
+    else:
+        return result.count(result[0]) == len(result)
+
+print(check_rhyme(input_phrase))
